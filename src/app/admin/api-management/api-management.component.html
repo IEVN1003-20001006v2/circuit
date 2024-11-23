@@ -1,0 +1,17 @@
+<h1>Gestión de APIs</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>Endpoint</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let api of apis">
+      <td>{{ api.method }}</td>
+      <td>{{ api.endpoint }}</td>
+      <td>{{ api.description }}</td>
+    </tr>
+  </tbody>
+</table>
